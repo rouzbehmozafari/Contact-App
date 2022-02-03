@@ -8,7 +8,7 @@ const Header =  ()=> {
                 <h2>Kontakte</h2>
                 <div className="search">
                     <input type="search" placeholder='Suchen'/>
-                    <div className="add">+</div>
+                    <a href='/newContact' className="add">+</a>
                 </div>
             </div>
         </div>

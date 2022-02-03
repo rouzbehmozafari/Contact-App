@@ -9,6 +9,8 @@ import {
 import Header from './Sections/Header';
 import Footer from './Sections/Footer';
 import MainContainer from './Sections/MainContainer';
+import NewContact from './Sections/NewContact';
+import Favorites from './Sections/Favorites';
 function App() {
   return (
     <div className="App">
@@ -16,6 +18,8 @@ function App() {
           <Header/>
             <Routes>
               <Route path='/' element={<MainContainer/>} /> 
+              <Route path='/newContact' element={<NewContact/>} /> 
+              <Route path='/favorites' element={<Favorites/>} /> 
             </Routes>
             <Footer/>
 

@@ -1,10 +1,9 @@
 import axios from "axios";
-
 const Contact = (props) => {
     const {bild,name,isFav,mobil} = props
     const changeFav =(e)=>{
         axios.get(`http://localhost:4000/fav?mobil=${mobil}&isFav=${isFav}`)
-        .then(x => {
+        .then(()=> {
             if (e.target.style.backgroundColor == 'yellow'){
                 e.target.style.backgroundColor = 'white'
             }
